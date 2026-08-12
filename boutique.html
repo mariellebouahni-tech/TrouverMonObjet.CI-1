@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boutique</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#F5F1E8;
+}
+
+header{
+    background:#F77F00;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    max-width:600px;
+    margin:auto;
+    padding:15px;
+}
+
+#produitsBoutique{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1 id="nomBoutique">Boutique</h1>
+</header>
+
+<div class="container">
+
+<div id="infosBoutique"></div>
+
+<h2>🛒 Tous les produits</h2>
+
+<div id="produitsBoutique"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

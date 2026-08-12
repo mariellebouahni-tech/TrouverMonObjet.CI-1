@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notifications</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#F5F1E8;
+}
+
+header{
+background:#F77F00;
+color:white;
+padding:18px;
+display:flex;
+align-items:center;
+gap:15px;
+font-size:22px;
+font-weight:bold;
+position:sticky;
+top:0;
+}
+
+header i{
+cursor:pointer;
+}
+
+#listeNotifications{
+padding:15px;
+}
+
+.notification{
+background:white;
+border-radius:15px;
+padding:15px;
+margin-bottom:15px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+cursor:pointer;
+transition:.2s;
+}
+
+.notification:hover{
+transform:scale(1.02);
+}
+
+.notification h3{
+color:#F77F00;
+margin-bottom:8px;
+}
+
+.notification p{
+color:#555;
+}
+
+.notification.nonLu{
+border-left:6px solid #F77F00;
+background:#FFF8E6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<i class="fa-solid fa-arrow-left"
+onclick="history.back()"></i>
+
+🔔 Notifications
+
+</header>
+
+<div id="listeNotifications">
+
+<p style="text-align:center;padding:40px;">
+Chargement...
+</p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

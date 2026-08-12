@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Espace Vendeur - Trouver Mon Objet CI</title>
+<span id="badgeNotifications"></span>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#F5F1E8;
+}
+
+header{
+    background:#F77F00;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    max-width:600px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#F77F00;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#d96c00;
+}
+
+p{
+    text-align:center;
+    margin-top:15px;
+}
+
+a{
+    color:#F77F00;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🛒 Espace Vendeur</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Connexion</h2>
+
+<input type="email" id="email" placeholder="Adresse e-mail">
+
+<input type="password" id="motdepasse" placeholder="Mot de passe">
+
+<button onclick="connexionVendeur()">Se connecter</button>
+
+<p>
+Pas encore de compte ?
+<a href="inscription.html">Créer un compte</a>
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

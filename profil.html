@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Profil</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#F5F1E8;
+}
+
+header{
+    background:#F77F00;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:30px;
+}
+
+.container{
+    max-width:700px;
+    margin:25px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:2px solid #F77F00;
+    border-radius:12px;
+    font-size:16px;
+    box-sizing:border-box;
+    outline:none;
+}
+
+input:focus{
+    border-color:#d96c00;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:12px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.enregistrer{
+    background:#28a745;
+}
+
+.enregistrer:hover{
+    background:#218838;
+}
+
+.deconnexion{
+    background:#dc3545;
+}
+
+.deconnexion:hover{
+    background:#b02a37;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>👤 Mon Profil</h1>
+</header>
+
+<div class="container">
+
+<input id="boutique" type="text" placeholder="Nom de la boutique">
+
+<input id="responsable" type="text" placeholder="Nom du responsable">
+
+<input id="telephone" type="tel" placeholder="Telephone">
+
+<input id="ville" type="text" placeholder="ville">
+
+<input id="email" type="email" placeholder="Email">
+
+<input id="motdepasse" type="text" placeholder="Mot de passe">
+
+<input id="adresse" type="text" placeholder="Adresse de la boutique (facultatif)">
+
+<button class="enregistrer" onclick="modifierProfil()">
+💾 Enregistrer les modifications
+</button>
+
+<button class="deconnexion" onclick="deconnexionVendeur()">
+🚪 Se déconnecter
+</button>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

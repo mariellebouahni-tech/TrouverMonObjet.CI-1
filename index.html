@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trouver Mon Objet CI</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#F5F1E8;
+}
+
+header{
+background:#F77F00;
+color:white;
+text-align:center;
+padding:18px;
+font-size:28px;
+font-weight:bold;
+}
+
+.container{
+max-width:600px;
+margin:auto;
+padding:20px;
+}
+
+.accueil{
+text-align:center;
+margin-top:20px;
+}
+
+.logo{
+font-size:60px;
+}
+
+h1{
+color:#F77F00;
+font-size:38px;
+margin-top:10px;
+}
+
+.slogan{
+font-size:22px;
+color:#555;
+margin:20px 0 30px;
+}
+
+button{
+width:100%;
+padding:18px;
+margin:12px 0;
+border:none;
+border-radius:12px;
+background:#F77F00;
+color:white;
+font-size:22px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#d96c00;
+}
+
+.conseils{
+margin-top:35px;
+background:#FFF7E8;
+border:3px solid #F77F00;
+border-radius:18px;
+padding:20px;
+}
+
+.conseils h2{
+text-align:center;
+color:#F77F00;
+margin-bottom:20px;
+}
+
+.conseils p{
+font-size:18px;
+margin:12px 0;
+color:#444;
+}
+
+.avertissement{
+margin-top:25px;
+padding-top:20px;
+border-top:1px solid #ccc;
+text-align:center;
+font-weight:bold;
+color:#B55A00;
+}
+
+footer{
+text-align:center;
+padding:25px;
+color:#666;
+}
+
+</style>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#F77F00">
+
+</head>
+
+<body>
+
+<header>
+🛒 Trouver Mon Objet CI
+</header>
+
+<div class="container">
+
+<div class="accueil">
+
+<div class="logo">🛒</div>
+
+<h1>Trouver<br>Mon Objet CI</h1>
+
+<p class="slogan">
+Compare les prix avant d'acheter.
+</p>
+
+<button onclick="window.location.href='inscription-acheteur.html'">
+    Acheteur
+</button>
+
+<button onclick="window.location.href='vendeur.html'">
+    Je suis un vendeur
+</button>
+
+
+</div>
+
+<div class="conseils">
+
+<h2>⚠️ Conseils de sécurité</h2>
+
+<p>✅ N'envoyez jamais d'argent avant d'avoir reçu et vérifié votre colis.</p>
+
+<p>✅ Vérifiez toujours le produit avant de payer.</p>
+
+<p>✅ Méfiez-vous des offres qui semblent trop belles pour être vraies.</p>
+
+<p>✅ Rencontrez le vendeur dans un lieu sûr si possible.</p>
+
+<p>✅ Signalez tout comportement suspect ou toute tentative d'arnaque.</p>
+
+<div class="avertissement">
+
+Trouver Mon Objet CI ne garantit pas les transactions entre acheteurs et vendeurs.<br><br>
+
+Chaque utilisateur est responsable de ses achats et de ses ventes.
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Trouver Mon Objet CI
+
+</footer>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("Service Worker enregistré"))
+        .catch(error => console.error("Erreur Service Worker :", error));
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>

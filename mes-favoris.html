@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ Mes favoris</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#F5F1E8;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#F77F00;
+    margin-bottom:25px;
+}
+
+#listeFavoris{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.carteFavori{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+
+.imageFavori{
+    width:100%;
+    max-height:280px;
+    object-fit:contain;
+    background:white;
+    padding:15px;
+}
+
+.contenuFavori{
+    padding:15px;
+}
+
+.nomFavori{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.prixFavori{
+    color:#F77F00;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.infoFavori{
+    margin:8px 0;
+    color:#555;
+}
+
+.actionsFavori{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.btnVoir,
+.btnSupprimer{
+    flex:1;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    color:white;
+}
+
+.btnVoir{
+    background:#F77F00;
+}
+
+.btnSupprimer{
+    background:#D62828;
+}
+
+.btnRetour {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    font-size: 38px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>❤️ Mes favoris</h1>
+
+<div id="listeFavoris"></div>
+
+<button class="btnRetour" onclick="history.back()" aria-label="Retour">
+    ⬅️
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

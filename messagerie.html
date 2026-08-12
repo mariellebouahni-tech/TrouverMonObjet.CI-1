@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messagerie</title>
+
+<style>
+  .page-messagerie{
+    background:#F5F1E8;
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+.header-messagerie{
+    background:#F77F00;
+    color:white;
+    padding:18px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.liste-conversations{
+    padding:15px;
+}
+
+.conversation{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    cursor:pointer;
+    transition:.2s;
+}
+
+.conversation:hover{
+    transform:scale(1.02);
+}
+
+.conversation h3{
+    margin:0;
+    color:#F77F00;
+    font-size:18px;
+}
+
+.conversation p{
+    margin:8px 0;
+    color:#555;
+}
+
+.conversation small{
+    color:#999;
+}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-messagerie">
+
+<header class="header-messagerie">
+    <h2>💬 Messagerie</h2>
+</header>
+
+<div id="listeConversations" class="liste-conversations">
+    <p>Chargement des conversations...</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

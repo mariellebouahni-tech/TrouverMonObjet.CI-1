@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Création des icônes</title>
+</head>
+<body>
+
+<canvas id="canvas" style="display:none;"></canvas>
+
+<script>
+function creerIcone(taille, nom) {
+    const canvas = document.getElementById("canvas");
+    canvas.width = taille;
+    canvas.height = taille;
+
+    const ctx = canvas.getContext("2d");
+
+    // Fond orange
+    ctx.fillStyle = "#F77F00";
+    ctx.fillRect(0, 0, taille, taille);
+
+    // Caddie
+    ctx.font = `${taille * 0.55}px Arial`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillText("🛒", taille / 2, taille / 2);
+
+    // Télécharger le PNG
+    canvas.toBlob(function(blob) {
+        const lien = document.createElement("a");
+        lien.href = URL.createObjectURL(blob);
+        lien.download = nom;
+        lien.click();
+    }, "image/png");
+}
+
+// Créer les deux icônes
+creerIcone(192, "icon-192.png");
+
+setTimeout(() => {
+    creerIcone(512, "icon-512.png");
+}, 1000);
+</script>
+
+</body>
+</html>

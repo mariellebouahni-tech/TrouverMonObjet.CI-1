@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mes Produits</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#F5F1E8;
+}
+
+header{
+    background:#F77F00;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:30px;
+}
+
+.container{
+    width:95%;
+    max-width:700px;
+    margin:25px auto;
+}
+
+.carte{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.carte img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.nom{
+    color:#F77F00;
+    margin-top:15px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.prix{
+    color:#28a745;
+    font-size:28px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.info{
+    margin:8px 0;
+    font-size:17px;
+    color:#444;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:12px;
+    border:none;
+    border-radius:12px;
+    background:#F77F00;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.details{
+    background:#28a745;
+}
+
+.details:hover{
+    background:#218838;
+}
+
+.modifier{
+    background:#007BFF;
+}
+
+.modifier:hover{
+    background:#0056b3;
+}
+
+.supprimer{
+    background:#dc3545;
+}
+
+.supprimer:hover{
+    background:#b02a37;
+}
+
+#listeProduits p{
+    text-align:center;
+    color:#666;
+    font-size:20px;
+    margin-top:50px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>📦 Mes Produits</h1>
+</header>
+
+<div class="container">
+
+<div id="listeProduits">
+<p>Chargement des produits...</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

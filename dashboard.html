@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tableau de bord vendeur</title>
+
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#F5F1E8;
+}
+
+header{
+    background:#F77F00;
+    color:white;
+    padding:30px;          /* avant : 20px */
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;        /* nouveau */
+}
+
+.container{
+    max-width:700px;       /* nouveau */
+    margin:25px auto;      /* nouveau */
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;          /* avant : 20px */
+    border-radius:15px;    /* avant : 10px */
+    margin-bottom:20px;    /* avant : 15px */
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.card h2{
+    margin-top:0;
+    color:#F77F00;
+    font-size:26px;        /* nouveau */
+}
+
+.btn{
+    display:block;
+    text-decoration:none;
+    background:#F77F00;
+    color:white;
+    padding:18px;          /* avant : 15px */
+    text-align:center;
+    border-radius:12px;    /* avant : 10px */
+    margin-top:15px;       /* avant : 10px */
+    font-weight:bold;
+    font-size:18px;        /* nouveau */
+}
+
+.stats{
+    display:flex;
+    gap:15px;              /* avant : 10px */
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.stat{
+    flex:1;
+    min-width:150px;       /* avant : 120px */
+    background:white;
+    text-align:center;
+    padding:20px;          /* avant : 15px */
+    border-radius:15px;    /* avant : 10px */
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.stat h3{
+    color:#F77F00;
+    margin:0;
+    font-size:22px;        /* nouveau */
+}
+
+.stat p{
+    font-size:30px;        /* avant : 20px */
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.headerDashboard{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#F77F00;
+}
+
+.logo span{
+color:#333;
+}
+
+.actionsHeader{
+position:relative;
+}
+
+.btnHeader{
+background:#F77F00;
+color:white;
+border:none;
+width:50px;
+height:50px;
+border-radius:50%;
+font-size:22px;
+cursor:pointer;
+position:relative;
+}
+
+#nbNotifications{
+position:absolute;
+top:-5px;
+right:-5px;
+background:red;
+color:white;
+border-radius:50%;
+min-width:20px;
+height:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:12px;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="headerDashboard">
+
+<div class="logo">
+🏪 <span>Vendeur</span>
+</div>
+
+<div class="actionsHeader">
+
+<button class="btnHeader"
+onclick="window.location.href='messagerie.html'">
+🔔
+<span id="nbNotifications">0</span>
+</button>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="stats">
+
+<div class="stat">
+<h3>📦Produits</h3>
+<p id="nbProduits">0</p>
+</div>
+
+<div class="stat">
+<h3>👁️Vues</h3>
+<p id="nbVues">0</p>
+</div>
+
+<div class="stat">
+<h3>💬Messages</h3>
+<p id="nbMessages">0</p>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Gestion</h2>
+
+<a href="ajouter-produits.html" class="btn">
+ ➕ Ajouter un produit
+  </a>
+
+<a href="mes-produits.html" class="btn">
+📦 Mes produits
+</a>
+
+<a href="profil.html" class="btn">
+👤 Mon profil
+</a>
+
+<a href="index.html" class="btn">
+🏠 Retour à l'accueil
+</a>
+
+<button
+    onclick="deconnexionVendeur()"
+    style="width:100%;padding:18px;background:#F77F00;color:white;border:none;border-radius:12px;font-size:22px;font-weight:bold;cursor:pointer;margin-top: 20px">
+    🚪 Déconnexion
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
